@@ -1,13 +1,13 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:084375547362:task-definition/reg-app-task-defination-1-oct:1",
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:253490766755:task-definition/reg-app-task-defination-3-oct:1",
     "containerDefinitions": [
         {
-            "name": "reg-app-1-oct",
-            "image": "084375547362.dkr.ecr.ap-south-1.amazonaws.com/reg-app-repository",
+            "name": "reg-app-3-oct",
+            "image": "253490766755.dkr.ecr.ap-south-1.amazonaws.com/reg-app-eks",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "reg-app-1-oct-80-tcp",
+                    "name": "reg-app-3-oct-80-tcp",
                     "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
@@ -23,7 +23,7 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "/ecs/reg-app-task-defination-1-oct",
+                    "awslogs-group": "/ecs/reg-app-task-defination-3-oct",
                     "mode": "non-blocking",
                     "awslogs-create-group": "true",
                     "max-buffer-size": "25m",
@@ -35,9 +35,9 @@
             "systemControls": []
         }
     ],
-    "family": "reg-app-task-defination-1-oct",
-    "taskRoleArn": "arn:aws:iam::084375547362:role/ecsTaskExecutionRole1OCT",
-    "executionRoleArn": "arn:aws:iam::084375547362:role/ecsTaskExecutionRole1OCT",
+    "family": "reg-app-task-defination-3-oct",
+    "taskRoleArn": "arn:aws:iam::253490766755:role/githubaction-ecs-role",
+    "executionRoleArn": "arn:aws:iam::253490766755:role/githubaction-ecs-role",
     "networkMode": "awsvpc",
     "revision": 1,
     "volumes": [],
@@ -88,7 +88,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-10-01T05:02:22.404Z",
-    "registeredBy": "arn:aws:iam::084375547362:root",
+    "registeredAt": "2024-10-03T10:42:31.019Z",
+    "registeredBy": "arn:aws:iam::253490766755:root",
     "tags": []
 }
